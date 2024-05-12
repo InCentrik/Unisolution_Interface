@@ -26,7 +26,7 @@ namespace InCentrik.UniSolution
 
                 timestampStr = DateTime.Parse(timestampStr, CultureInfo.GetCultureInfo("pt-BR")).ToString();
                 string tagNamePrefix = "4000.Tank " + tankNumberStr.Trim() + ".";
-                float inventory = (float)(ConvertToUSCultureFloat(inventoryStr) / 0.0062898108);
+                float inventory = (float)(ConvertToUSCultureFloat(inventoryStr) * 0.0062898108);
                 float temp = (float) (ConvertToUSCultureFloat(tempStr)*9/5+32);
 
 
